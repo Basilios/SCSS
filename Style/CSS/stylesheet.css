@@ -1,0 +1,33 @@
+html body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(12, 8.33%);
+  grid-template-rows: repeat(36, 2.77%);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  grid-auto-flow: column;
+}
+html header {
+  background-color: darkorange;
+  grid-column: 1/12;
+  grid-row: 1/8;
+}
+html header .header__img {
+  grid-column: 1/12;
+  grid-row: 1/8;
+  width: 100%;
+}
+html header .header__logo {
+  grid-column: 5/8;
+  grid-row: 3/6;
+}
+html main {
+  background-color: lightblue;
+}
+html footer {
+  background-color: tomato;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

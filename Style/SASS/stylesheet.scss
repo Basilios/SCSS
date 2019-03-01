@@ -1,0 +1,41 @@
+// importation du fichier _varmix.scss//
+@import "_varmix";
+
+html {
+    body {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(12, 8.33%);
+        grid-template-rows: repeat(36, 2.77%);
+        grid-column-gap: 1px;
+        grid-row-gap: 1px;
+        grid-auto-flow: column;
+    }
+
+    header {
+        background-color: darkorange;
+        grid-column: 1 / 12;
+        grid-row: 1 / 8;
+
+        .header__img {
+            grid-column: 1 / 12;
+            grid-row: 1 / 8;
+            width: 100%;
+        }
+
+        .header__logo {
+            grid-column: 5 / 8;
+            grid-row: 3/ 6;
+        }
+    }
+
+    main {
+        background-color: lightblue;
+    }
+
+    footer {
+        background-color: tomato;
+    }
+}
